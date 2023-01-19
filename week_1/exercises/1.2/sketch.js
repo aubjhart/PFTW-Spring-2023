@@ -1,7 +1,15 @@
 function setup() {
-  // put setup code here
+  createCanvas(600,600);
 }
+
 function draw() {
-  background(204);
-  ellipse(50, 50, 80, 80);
+  if (mouseIsPressed) {
+    fill(16, 255, 252);
+    stroke(0);
+    strokeWeight(5);
+  } else {
+    noFill();
+    noStroke();
+  }
+  ellipse(mouseX, mouseY, 200, 200);
 }
