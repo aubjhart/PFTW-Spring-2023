@@ -4,7 +4,6 @@ let fill2 = prompt("enter another basic color lowercase", "pink")
 function setup() {
     createCanvas(1000, 800);
     background("#60e7ff");
-    grid = loadImage("images/100px_grid.png")
 }
 
 function draw() {
@@ -89,6 +88,5 @@ function draw() {
     stroke(0);
     strokeWeight(10);
     line(750, 215, 785, 235);
-    line(785, 235, 765, 360
-        );
+    line(785, 235, 765, 360);
 }
