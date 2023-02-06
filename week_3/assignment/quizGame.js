@@ -24,9 +24,8 @@ function next() {
     
 }
 
-const wrongAnswerCounter = [];
+var wrongAnswerCounter = [];
 console.log("The list of trivia questions that were answered incorrectly are:", wrongAnswerCounter);
-console.log("Current number of wrong answers is: ", wrongAnswerCounter.length);
 
 function checkQuestion() {
     if (currentQuestion.answer === questionInput.value()) {
@@ -51,7 +50,10 @@ function checkQuestion() {
     if (currentQuestion) {
         message = currentQuestion.question;
     }
+    console.log("Current number of wrong answers is: ", wrongAnswerCounter.length);
+
 }
+
 
 currentQuestion = next();
 let message = currentQuestion.question
