@@ -1,14 +1,18 @@
 let square1;
+let square2;
 
 function setup() {
   createCanvas(600, 400);
   square1 = new Square();
+  square2 = new Square();
 }
 
 function draw() {
   background('cyan');
   square1.move();
   square1.show();
+  square2.move();
+  square2.show();
 }
 
 class Square {
