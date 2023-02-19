@@ -29,7 +29,7 @@ function preload() {
         loadImage('images/squirtflower.png'),
     ]
     bg = loadImage('images/background.png');
-    header = loadFont('images/minnie.ttf');
+    header = loadFont('images/Minnie.ttf');
     bodyCopy = loadFont('images/impress_bt.ttf');
 }
 
