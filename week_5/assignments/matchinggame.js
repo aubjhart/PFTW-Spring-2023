@@ -29,8 +29,8 @@ function preload() {
         loadImage('images/squirtflower.png'),
     ]
     bg = loadImage('images/background.png');
-    header = loadFont('images/Minnie.ttf');
-    bodyCopy = loadFont('images/impress_bt.ttf');
+    header = loadFont('images/Minnie.otf');
+    bodyCopy = loadFont('images/impress_bt.otf');
 }
 
 function setup () {
