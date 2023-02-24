@@ -58,7 +58,6 @@ function setup () {
 }
 
 function draw() { 
-
     fill('#F4EB4D');
     textSize(24);
     textFont(header);
