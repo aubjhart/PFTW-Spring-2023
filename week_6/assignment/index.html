@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Work+Sans:wght@400;600&display=swap');
+    </style>
+    <title>Llama Drama</title>
+</head>
+<body>
+    <div id="myApp">
+        <h1>Welcome to Llama Drama</h1>
+        <h2>Spreading Awareness of Berserk Llama Syndrome Since 2023</h2>
+        <p v-if="berserk === true">Berserk llama syndrome (BLS) is a real condition where a llama believes its human owner is also a llama, causing the animal to become aggressive.</p>
+        <p>{{llamaone}}</p>
+        <p>{{llamatwo}}</p>
+        <p>{{llamathree}}</p>
+        <p>{{llamafour}}</p>
+        <p>{{llamafive}}</p>
+        <p>{{llamasix}}</p>
+        <p>{{llamaseven}}</p>
+        <p>{{llamaeight}}</p>
+        <p>{{llamanine}}</p>
+    </div>
+    <script src="./llamas.js"></script>
+</body>
+</html>
