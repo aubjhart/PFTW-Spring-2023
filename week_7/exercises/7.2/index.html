@@ -1,0 +1,46 @@
+<!doctype html>
+
+<html>
+
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Work+Sans:wght@400;600&display=swap');
+  </style>
+</head>
+
+<body>
+    <div id="llamaList">
+    
+      <h1 class="llama-list-title">What to name your next llama</h1>
+
+        <table class="list-container">
+          <thead class="list-head">
+              <th>Rank</th>
+              <th>Name</th>
+          </thead>
+          <tbody>
+            <tr 
+            v-for="(item,index) in llamas"
+            v-bind:class="{
+              'odd': index%2===0
+            }"
+            >
+              <td>{{item.rank}}</td>
+              <td
+              v-bind:class="{
+                'llama': item.name.toLowerCase().includes('llama'),
+              }"
+              >{{item.name}}</td>
+            </tr>
+          </tbody>
+        </table>
+
+  </div>
+
+  <script src="llamas.js"></script>
+
+</body>
+
+</html>

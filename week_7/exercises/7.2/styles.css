@@ -1,0 +1,44 @@
+/* Add your styles here */
+html {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  color: #2b2e4b;
+  font-size: 18px;
+}
+
+body {
+  background-color: #dde0fe;
+}
+
+.llama-list-title {
+  margin: 50px auto;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: 'Climate Crisis', cursive;
+  color: #8f99fb;
+}
+.list-container {
+  margin: auto;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+.list-container th, tr, td {
+  padding: 8px;
+}
+
+.list-head .rank, .list-head .name {
+  display: inline-block;
+  width: 45%;
+  text-align: center;
+}
+
+.llama {
+  font-weight: bold;
+  color: #8f99fb;
+}
+
+.odd {
+  background-color: #ffffff;
+}
