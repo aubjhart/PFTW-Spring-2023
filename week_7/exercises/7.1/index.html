@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Work+Sans:wght@400;600&display=swap');
+    </style>
+    <title>A Comparison of Camelids</title>
+</head>
+<body>
+    <div id="myApp" v-cloak>
+        <h1>A Comparison of Camelids</h1>
+
+        <h2>Who really knows the difference? Definitely not me. Click on the images to maybe possibly find out! No promises.</h2>
+
+        <div id="comparison">
+            <div id="comparison--element">
+                <a 
+                :href="llama" target="_blank">
+                    <img 
+                    :class="{active: currentImage==='llama'}"
+                    id="comparison--element__image" src="./images/a_llama_i_think.png" alt="we suspect this is a llama">
+                    </a> 
+                <p :style="styleObject">We suspect this is a llama.</p>
+            </div>
+            <div id="comparison--element">
+                <a  
+                :href="alpaca" target="_blank">
+                    <img 
+                    :class="{active: currentImage==='alpaca'}"
+                    id="comparison--element__image" src="./images/very_well_may_be_an_alpaca.png" alt="this very well may be an alpaca">
+                    </a>
+                <p :style="styleObject">This very well may be an alpaca.</p>
+            </div>
+
+        </div>
+       
+    </div>
+    <script src="./llamasvalpacas.js"></script>
+</body>
+</html>

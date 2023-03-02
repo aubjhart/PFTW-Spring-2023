@@ -1,0 +1,52 @@
+body{
+    background-color:#dde0fe;
+    margin: 75px;
+    margin-right: 325px;
+
+}
+
+h1{
+    font-family: 'Climate Crisis', cursive;
+    color: #8f99fb;
+}
+
+h2{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    color: #2b2e4b;
+}
+
+p{
+    font-family: 'Work Sans', sans-serif;
+    color: #2b2e4b;
+}
+
+[v-cloak] {
+    display: none;
+  }
+
+#comparison {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#comparison--element {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#comparison--element__image:hover {
+    border: 5px solid #2b2e4b;
+}
+
+#comparison--element__image.active {
+    border: 2px solid #ff30b0;
+}
+
+#comparison--element__image.active:hover {
+    border: 5px solid #2b2e4b;
+}
