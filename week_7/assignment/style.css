@@ -1,0 +1,54 @@
+.odd {
+    background-color: #B3A37F;
+}
+
+body {
+    font-family: "freight-big-pro", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    background-color: #D1C6AD;
+    margin: 75px;
+    color: #3F3047;
+    letter-spacing: .25px;
+}
+
+h1 {
+    font-family: "lisbeth-display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 64px;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-family: "freight-macro-pro", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    margin-top: 5px;
+    margin-bottom: 35px;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th,
+td {
+  min-width: 15%;
+  padding: 15px;
+}
+
+thead {
+    background-color: #B3A37F;
+    font-family: "freight-macro-pro", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+img {
+    padding: 15px;
+}
+
