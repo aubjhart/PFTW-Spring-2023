@@ -9,18 +9,18 @@ Vue.createApp({
     },
     methods: {
         calculate (num1, num2) {
-            switch (operation) {
+            switch (this.operation) {
                 case 'add':
-                   total = num1 + num2;
+                   this.total = num1 + num2;
                    break;
                 case 'subtract':
-                    total = num1 - num2;
+                    this.total = num1 - num2;
                     break;
                 case 'multiply':
-                    total = num1 * num2;
+                    this.total = num1 * num2;
                     break;
                 case 'divide':
-                    total = num1 / num2;
+                    this.total = num1 / num2;
                     break;
                 default:
                     alert('unexpected operator');
