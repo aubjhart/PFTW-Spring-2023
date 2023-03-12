@@ -37,11 +37,10 @@
             </tbody>
         </table>
     </div>
-    <div>
-      <form v-on:submit="submitHandler">
-        <fieldset>
-            <legend>Add Your Own Totem!</legend>
-            <div>
+     <form v-on:submit.prevent="submitHandler">
+       <fieldset>
+           <legend>Add Your Own Totem!</legend>
+           <div>
                 <label for="image">Image</label>
                 <input id="image" type="text" v-model="newTotemObj.image">
             </div>
@@ -61,10 +60,9 @@
                 <label for="description">Description</label>
                 <input id="description" type="text" v-model="newTotemObj.description">
             </div>
-            <button type="submit">Submit My Totem</button>
+            <button type="submit">Submit Totem</button>
         </fieldset>
       </form>      
-    </div>
     <script src="./collection.js"></script>
 </body>
 </html>
