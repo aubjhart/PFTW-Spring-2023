@@ -53,9 +53,9 @@ Vue.createApp({
         this.newTotemObj = {
           item: "",
           gotFrom: "",
-          hadSince: null,
+          hadSince: "",
           description: "",
-          image: '',
+          image: ""
       };
       },
       deleteItem (totem) {
