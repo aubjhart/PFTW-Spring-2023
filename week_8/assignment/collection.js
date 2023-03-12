@@ -1,6 +1,13 @@
 Vue.createApp({
     data() {
       return {
+        newTotemObj: {
+            item: "",
+            gotFrom: "",
+            hadSince: null,
+            description: "",
+            image: '',
+        },
         totems: [
             {
                 item: "Heart Rock",
@@ -34,6 +41,27 @@ Vue.createApp({
                 image: 'https://images.unsplash.com/photo-1554832353-3938e7c3b088?w=100',
               },
         ]
+      }
+    },
+    methods: {
+      submitHandler: () => {
+        console.log('submitted');
+        totems = totems.concat(this.newTotemObj);
+        this.resetForm();
+      },
+      resetForm: () => {
+        this.newTotemObj = {
+          item: "",
+          gotFrom: "",
+          hadSince: null,
+          description: "",
+          image: '',
+      };
+      },
+      deleteItem: totem => {
+        totems = totems.filter(totems => {
+          return totems !== totem;
+        })
       }
     }
   }).mount("#myTotems");

@@ -20,6 +20,7 @@
                 <th>Got It From</th>
                 <th>Had Since</th>
                 <th>Description</th>
+                <th>Actions</th>
             </thead>
             <tbody>
                 <tr 
@@ -31,9 +32,38 @@
                     <td>{{totem.gotFrom}}</td>
                     <td>{{totem.hadSince}}</td>
                     <td>{{totem.description}}</td>
+                    <td><button type="button" v-on:click="deleteItem(image)">Delete</button></td>
                 </tr>
             </tbody>
         </table>
+    </div>
+    <div>
+      <form v-on:submit="submitHandler">
+        <fieldset>
+            <legend>Add Your Own Totem!</legend>
+            <div>
+                <label for="image">Image</label>
+                <input id="image" type="text" v-model="newTotemObj.image">
+            </div>
+            <div>
+                <label for="item">Totem</label>
+                <input id="item" type="text" v-model="newTotemObj.item">
+            </div>
+            <div>
+                <label for="gotFrom">Got It From</label>
+                <input id="gotFrom" type="text" v-model="newTotemObj.gotFrom">
+            </div>
+            <div>
+                <label for="hadSince">Had Since</label>
+                <input id="hadSince" type="date" v-model="newTotemObj.hadSince">
+            </div>
+            <div>
+                <label for="description">Description</label>
+                <input id="description" type="text" v-model="newTotemObj.description">
+            </div>
+            <button type="submit">Submit My Totem</button>
+        </fieldset>
+      </form>      
     </div>
     <script src="./collection.js"></script>
 </body>
