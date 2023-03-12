@@ -4,9 +4,9 @@ Vue.createApp({
         newTotemObj: {
             item: "",
             gotFrom: "",
-            hadSince: null,
+            hadSince: "",
             description: "",
-            image: "",
+            image: ""
         },
         totems: [
             {
@@ -58,7 +58,7 @@ Vue.createApp({
           image: '',
       };
       },
-      deleteItem: totem => {
+      deleteItem (totem) {
         this.totems = this.totems.filter(totems => {
           return totems !== totem;
         })
