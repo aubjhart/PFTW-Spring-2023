@@ -6,7 +6,7 @@ Vue.createApp({
             gotFrom: "",
             hadSince: null,
             description: "",
-            image: '',
+            image: "",
         },
         totems: [
             {
@@ -46,7 +46,7 @@ Vue.createApp({
     methods: {
       submitHandler: () => {
         console.log('submitted');
-        totems = totems.concat(this.newTotemObj);
+        this.totems = this.totems.concat(this.newTotemObj);
         this.resetForm();
       },
       resetForm: () => {
@@ -59,7 +59,7 @@ Vue.createApp({
       };
       },
       deleteItem: totem => {
-        totems = totems.filter(totems => {
+        this.totems = this.totems.filter(totems => {
           return totems !== totem;
         })
       }
