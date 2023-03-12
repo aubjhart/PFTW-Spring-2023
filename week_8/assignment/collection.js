@@ -55,7 +55,8 @@ Vue.createApp({
             hadSince: "",
             description: "",
             image: ""
-      };
+      }
+    },
       deleteItem (totem) {
         this.totems = this.totems.filter(totems => {
           return totems !== totem;
