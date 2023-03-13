@@ -44,11 +44,11 @@ Vue.createApp({
       }
     },
     methods: {
-      submitHandler: () => {
+      submitHandler() {
         this.totems = this.totems.concat(this.newTotemObj);
         this.resetForm();
       },
-      resetForm: () => {
+      resetForm() {
         this.newTotemObj = {
             item: "",
             gotFrom: "",
