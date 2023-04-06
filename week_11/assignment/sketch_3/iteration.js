@@ -1,27 +1,21 @@
 function setup() {
-    createCanvas(800, 800);
-    background(251, 149, 255);
-    angleMode(DEGREES);
-  }
+  createCanvas(800, 800);
+  background(255);
+}
 
-  function cottonCandy() {
-    fill(237,20,91,15);
-    noStroke();
-    square(random(100), random(300), random(800), random(300));
-    fill(126,235,255,20);
-    noStroke();
-    square(random(100), random(300), random(800), random(300));
-    fill(255,178,182,25);
-    noStroke();
-    square(random(100), random(300), random(800), random(300));
-  }
-  
-  function draw() {
-    translate(random(800), random(800));
-    rotate(random(360));
-    cottonCandy();
-  }
+function draw() {
+  fill(random(255), random(255), random(255));
+  stroke(255);
+  strokeWeight(15);
 
-  function mousePressed() {
-    noLoop();
+  for (let x = 0; x <= width; x += 50) {
+    for (let y = 0; y <= height; y += 50) {
+      triangle(x, y, x + random(50), y, x, y + random(50));
+    }
+    frameRate(3);
   }
+}
+
+function mousePressed() {
+  noLoop();
+}
