@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    background-color: #c982ff;
+}
+
+button {
+    font-family: "owners-xwide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ccffd4;
+    background-color: blueviolet;
+    border-style: none;
+    width: 600px;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: -10px;
+}
+
+h1 {
+    font-family: "owners-xxwide", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    margin-top: 50px;
+    margin-bottom: 5px;
+    color: #6e13d9;
+}
+
+p {
+    font-family: "owners-narrow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #6e13d9;
+
+}
